@@ -1,3 +1,57 @@
+/* Navbar background */
+.navbar {
+    background-color: #03335c !important;
+}
+
+/* Brand text */
+.navbar-brand,
+.navbar-brand span {
+    color: #ffffff !important;
+}
+
+/* All nav links (default) */
+.navbar .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+    color: #ad810d !important;
+}
+
+/* Active page link */
+.navbar .nav-link.active {
+    color: #ad810d !important;
+}
+
+/* Dropdown open (clicked) */
+.navbar .nav-item.show > .nav-link,
+.navbar .nav-item.show > .nav-link:hover,
+.navbar .nav-item.show > .nav-link:focus {
+    color: #ad810d !important;
+}
+
+/* Dropdown menu items */
+.dropdown-menu .dropdown-item {
+    color: #03335c;
+}
+
+/* Dropdown item hover */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #03335c;
+    color: #ffffff;
+}
+
+/* Navbar toggler icon (white) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
 .hero-img {
   height: 200px;
   object-fit: cover;
@@ -20,9 +74,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8); /* optional overlay */
+    background: #fffffff1; /* optional overlay */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1050; /* above everything */
 }
+
