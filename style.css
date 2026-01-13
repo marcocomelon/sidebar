@@ -22,6 +22,14 @@
     color: #ad810d !important;
 }
 
+.navbar-toggler{
+    color: #ad810d !important;
+}
+
+.navbar-toggler .navbar-toggler:hover{
+    transition: color 0.3s ease;
+}
+
 /* Active page link */
 .navbar .nav-link.active {
     color: #ad810d !important;
