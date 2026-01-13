@@ -10,6 +10,25 @@
     <title>My Dashboard</title>
 </head>
 <body>
+    
+        <!-- Toast -->
+        <div aria-live="polite" aria-atomic="true"
+            class="bg-body-secondary position-relative bd-example-toasts rounded-3">
+
+            <div class="toast-container position-fixed top-0 end-0 mt-5 me-3" id="toastPlacement">
+                <div class="toast" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">System</strong>
+                        <small>Just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                        Leave request submitted successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div id="loader" class="spinner-container">
             <div class="spinner-border m-5" role="status">
@@ -189,20 +208,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Module 4</h5>
-
-                        <div class="row g-2">
-                            <div class="col-12">
-                                <div class="p-2 border rounded">Summary</div>
-                            </div>
-                            <div class="col-6">
-                                <div class="p-2 border rounded">Yes</div>
-                            </div>
-                            <div class="col-6">
-                                <div class="p-2 border rounded">No</div>
-                            </div>
+                        <h5 class="card-title">Trigger Notification</h5>
+                        <!-- Trigger Button -->
+                        <div class="container my-3">
+                            <button class="btn btn-primary" id="showToastBtn">
+                                Show Notification
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -215,5 +227,6 @@
     <script src="./js/nav.js"></script>
     <script src="./js/loader.js"></script>
     <script src="./js/attendance.js"></script>
+    <script src="./js/trigger.js"></script>
 </body>
 </html>
